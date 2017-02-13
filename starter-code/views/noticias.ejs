@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= obj.title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%obj.items.forEach((elem, indexOf, arr) => {%>
+      <h1><%= obj.title %></h1>
+      <p><%= elem.title %></p>
+      <p><%= elem.link %></p>
+      <p><%= elem.description %></p>
+    <%})%>
+    </body>
+</html>
